@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="text-white bg-dark jumbotron">
+      <h1 class="text-center display-5">Weather Dashboard</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Search -->
+        <div class="col-lg-3 bg-light" id="search-section">
+          <form>
+            <div class="form-group">
+              <label>Search for a City</label>
+
+              <div class="form-inline form-group">
+                <input class="form-control" id="city-search" />
+                <button class="btn btn-primary" id="search-button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <ul class="list-group"></ul>
+        </div>
+        <!-- Weather -->
+
+        <div class="col-9">
+          <!-- Current weather-->
+          <div class="row">
+            <div class="col py-3">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title" id="current-time-date">
+                    City and Time
+                  </h1>
+                  <p id="current-temp">Temperature</p>
+                  <p id="current-humid">Humidity</p>
+                  <p id="current-wind">Wind Speed</p>
+                  <p id="current-uv">UV index</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 day forcast -->
+          <div class="row">
+            <div class="col">
+              <h1>5-Day Forcast</h1>
+              <div class="card-deck"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  <script></script>
+</html>
